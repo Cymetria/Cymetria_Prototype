@@ -1,18 +1,117 @@
 
     @font-face{
       font-family: proximasansregular;
-      src: url('proximasansregular.ttf'),
+        src: url('font/ufonts.com_proximasansregular.eot');
+  src: local('☺'), url('font/ufonts.com_proximasansregular.woff') format('woff'), url('font/ufonts.com_proximasansregular.ttf') format('truetype'), url('font/ufonts.com_proximasansregular.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
     }
     @font-face{
       font-family: BebasNeue;
-      src: url('BebasNeue.ttf'),
+      src: url('font/BebasNeue.eot');
+      src: local('☺'), url('font/BebasNeue.woff') format('woff'), url('font/BebasNeue.ttf') format('truetype'), url('font/BebasNeue.svg') format('svg');
+      font-weight: normal;
+      font-style: normal;
     }
     body {
-      padding-bottom: 40px;
       color: #5a5a5a;
+    }
+    #carrusel-box1{
+      width: 950px; 
+    }
+    #container-servicios, #container-casos, .container-contacto{
+      padding-top: 40px;
+    }
+    #suscriber input, #suscriber #send_suscriber{
+      float: left;
+      margin: 0;
+      padding: 0;
+      height: 40px;
+      vertical-align: middle;
+
+    }
+    #pos{
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    #suscriber input{
+      border-radius: 0;
+      border: none;
+    }
+
+    #suscriber  #send_suscriber{
+      background: red;
+      color: white;
+      width: 84px;
+      padding: 10px 0px 0px 27px;
+      height: 30px;
+    }
+    #social-icons-footer li{
+      list-style: none;
+      margin: 2px 10px;
+      display:inline-block;
+    }
+    .footer{
+      padding-top: 30px;
+    }
+
+    .right{
+      text-align: right;
+      float: right;
+    }
+    .left{
+      text-align: left;
+      float: left;
+    }
+    .nav-bottom{
+      list-style: none;
+    }
+    .nav-bottom li a{
+      color: white;
+    }
+    .nav-bottom li{
+      margin: 2px 5px;
+      display: inline-block;
+    }
+    .container{
+      width: 950px;
+    }
+    .head_form{
+      height: 10px;
+      width: 100%;
+      background: red;
+    }
+
+    .line_form input, .line_form label{
+      display: inline-block;
+      vertical-align: top;
+    } 
+    .line_form input{
+      height: 15px;
+    }
+    .line_form label{
+      width: 95px;
+    } 
+
+    #contacto #form_1{
+      float: left;
+    }
+    #contacto #form_2{
+      float: right;
+      
+    }
+    .content_form{
+      padding: 15px;
     }
 
 
+    .form_box{
+      
+      width: 360px;
+      min-height: 300px;
+      background: rgba(247, 247, 247, 0.8);
+    }
     .title-section{
       color: white;
       width: 600px;
@@ -46,12 +145,20 @@
     margin-left: 25px;
     }
 
+    .navbar-scroll{
+      background: rgba(0,0,0,0.8);
+    }
+
     .navbar-wrapper {
-      position: absolute;
+      position: fixed;
       top: 0;
       left: 0;
       right: 0;
-      z-index: 10;
+      z-index: 2000;
+      -webkit-transition: all 2s;
+      -o-transition: all 2s;
+      -moz-transition: all 2s;
+      -ms-transition: all 2s;
     }
     .navbar .navbar-inner {
       border: 0;
@@ -76,7 +183,10 @@
 
     .carousel {
       background: url(../img/bg_home.jpg);
-      background-size: auto 100%;
+       -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
     }
 
     .carousel .container {
@@ -133,13 +243,14 @@
       margin-top: 10px;
       background: #6abc9c;
     }
-    .marketing .span3 {
+    .marketing .span2 {
       text-align: center;
+      width: 215px;
     }
     .marketing h2 {
       font-weight: normal;
     }
-    .marketing .span3 p {
+    .marketing .span2 p {
       margin-left: 10px;
       margin-right: 10px;
     }
@@ -236,6 +347,84 @@
       background: #e7aa32;
       box-shadow: 0px 8px 1px #fdf6ea;
     }
+    #title-section_5{
+      background: #5c95da;
+      box-shadow: 0px 8px 1px #f1f9f8;
+    }
+    #title-section_6{
+      background: #98a3a4;
+      box-shadow: 0px 8px 1px #323333;
+      margin: 40px auto;
+    }
+    .franja_negra{
+      background: #262626;
+      padding-bottom: 32px;
+    }
+  
+    #contacto{
+      width: 100%;
+      background: url(../img/bg_bogota.jpg);
+      min-height: 770px;
+ -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;    }
+    #logos_socios ul{
+      list-style: none;
+      left: 0;
+      right: 0;
+      margin-right: auto;
+      margin-left: auto;
+      width: 600px;
+    }
+    #logos_socios li{
+      display: inline-block;
+      margin: 0 22px;
+    }
+    #logos_casos{
+      margin-bottom: 50px;
+    }
+    #logos_casos h5{
+      margin: 0;
+      padding: 0;
+      text-align: left;
+      line-height: 9px;
+    }
+    #logos_casos img{
+      margin: 9px auto;
+    }
+    #logos_casos p{
+      margin: 0;
+      padding: 0;
+      color: #777777;
+      text-align: left;
+    }
+
+    #logos_casos ul{
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      left: 0;
+      right: 0;
+      margin-right: auto;
+      margin-left: auto;
+      width: 932px;
+    }
+    #logos_casos ul li{
+      text-align: center;
+      margin: 3px 0;
+      padding: 0;
+      width: 230px;
+      height: 210px;
+      display: inline-block;
+      vertical-align: top;
+      cursor: pointer;
+
+    }
+
+    #logos_casos #first-row li{
+      background: #f0f0f0;
+    }
 
 
     #logos_tecnologias #first-row #logo_1{
@@ -288,6 +477,112 @@
 
     /* RESPONSIVE CSS
     -------------------------------------------------- */
+    @media screen and (max-width: 1025px) {
+      .container {
+        width: 910px;
+      }
+      .marketing .span2{
+        width: 200px;
+      }
+        #ui-carousel-next, #ui-carousel-prev {
+        width: 40px;
+
+        height: 240px;
+        background: url(../img/arrow-left.png) #fff center center no-repeat;
+        display: block;
+        background-size: 100% auto;
+        position: absolute;
+        top: 1580px;
+        z-index: 100;
+      }
+
+      #ui-carousel-next {
+        right: 5px;
+        background-image: url(../img/arrow-right.png);
+      }
+
+      #ui-carousel-prev {
+        left: 5px;
+      }
+      
+      #ui-carousel-next > span, #ui-carousel-prev > span {
+        display: none;
+      }
+      /* ///////////////*/
+      #ui-carousel-next2, #ui-carousel-prev2 {
+        width: 40px;
+
+        height: 240px;
+        background: url(../img/arrow-left.png) #fff center center no-repeat;
+        display: block;
+        background-size: 100% auto;
+        position: absolute;
+        top: 1580px;
+        z-index: 100;
+      }
+
+      #ui-carousel-next2 {
+        right: 5px;
+        background-image: url(../img/arrow-right.png);
+      }
+
+      #ui-carousel-prev2 {
+        left: 5px;
+      }
+      
+      #ui-carousel-next2 > span, #ui-carousel-prev2 > span {
+        display: none;
+      }
+
+    }
+    @media screen and (min-width: 1025px) {
+       #ui-carousel-next, #ui-carousel-prev {
+        width: 60px;
+        height: 240px;
+        background: url(../img/arrow-left.png) #fff center center no-repeat;
+        display: block;
+        position: absolute;
+        top: 800px;
+        z-index: 100;
+      }
+
+      #ui-carousel-next {
+        right: 10%;
+        background-image: url(../img/arrow-right.png);
+      }
+
+      #ui-carousel-prev {
+        left: 10%;
+      }
+      
+      #ui-carousel-next > span, #ui-carousel-prev > span {
+        display: none;
+      }
+      /* /////////////// */
+      #ui-carousel-next2, #ui-carousel-prev2 {
+        width: 60px;
+        height: 240px;
+        background: url(../img/arrow-left.png) #fff center center no-repeat;
+        display: block;
+        position: absolute;
+        top: 1580px;
+        z-index: 100;
+      }
+
+      #ui-carousel-next2 {
+        right: 10%;
+        background-image: url(../img/arrow-right.png);
+      }
+
+      #ui-carousel-prev2 {
+        left: 10%;
+      }
+      
+      #ui-carousel-next2 > span, #ui-carousel-prev2 > span {
+        display: none;
+      }
+
+    }
 
     @media (max-width: 979px) {
 
@@ -355,7 +650,7 @@
         font-size: 18px;
       }
 
-      .marketing .span3 + .span3 {
+      .marketing .span2 + .span2 {
         margin-top: 40px;
       }
 
