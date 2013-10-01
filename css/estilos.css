@@ -13,9 +13,23 @@
       font-weight: normal;
       font-style: normal;
     }
-    body {
-      color: #5a5a5a;
+    @font-face {
+      font-family: 'ptsans';
+      src: url('fonts/ptsans.eot');
+      src: local('☺'), url('font/ptsans.woff') format('woff'), url('font/ptsans.ttf') format('truetype'), url('font/ptsans.svg') format('svg');
+      font-weight: normal;
+      font-style: normal;
     }
+    body {
+    background-color: #FFFFFF;
+    color: #333333;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+    text-rendering: optimizespeed;
+    }
+
     .carousel #scroll_img{
       width: 30px;
 position: static;
@@ -28,7 +42,9 @@ margin-top: 33px;
       font-weight: normal;
     }
     #boton5 {
-      color: red;
+      color: #F64C32;
+      text-transform:uppercase;
+
     }
     #logos_casos a{
       color: black;
@@ -101,9 +117,21 @@ margin-top: 33px;
 .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
     right: 0px; 
 }
+#box_quienes_somos, #box_servicios{
+  height: 700px;
+}
+    
+    #carrusel-box1, #carrusel-box2{
+      display: inline-block;
+    }
+    #container-carrousel, #container-servicios{
 
-    #carrusel-box1{
-      width: 950px; 
+      width: 1080px;
+position: absolute;
+left: 0;
+right: 0;
+margin-left: auto;
+margin-right: auto;
     }
     #container-servicios, #container-casos, .container-contacto{
       padding-top: 40px;
@@ -234,9 +262,14 @@ margin-top: 33px;
       margin-left: auto;
       margin-right: auto;
       text-align: center; 
-      font-size: 30px;   }
+      font-size: 30px;
+      font-family: ptsans;
+         }
       .message .lead{
-        font-size: 24px;
+        font-size: 25px;
+    line-height: 35px;
+   color:#333333;
+
       }
     .navbar .nav{
       font-family:  proximasansregular;
@@ -254,6 +287,8 @@ margin-top: 33px;
       left: 0;
       right: 0;
       z-index: 2000;
+      width: 100%;
+height: 72px;
       -webkit-transition: all 2s;
       -o-transition: all 2s;
       -moz-transition: all 2s;
@@ -338,7 +373,7 @@ margin-top: 33px;
       margin: 0;
       font-size: 100px;
       line-height: 1.25;
-      color: red;    
+      color: #F64C32;    
     }
     .carousel-caption .btn {
       margin-top: 10px;
@@ -434,30 +469,34 @@ margin-top: 33px;
       background: #f5f5f3;
     }
     #title-section_1{
-      background: #6abc9c;
-      box-shadow: 0px 8px 1px #f0f8f5;
+      background: none repeat scroll 0 0 #1cbc9c;
+      box-shadow: 0 8px 1px #F0F8F5;
+
     }
     #title-section_2{
-      background: red;
-      box-shadow: 0px 8px 1px #faedeb;
+      background: none repeat scroll 0 0 #e74c3c;
+      box-shadow: 0 8px 1px #FAEDEB;
+
     }
     #title-section_3{
-      background: #b19a68;
-      box-shadow: 0px 8px 1px #f7f5f0;
+      background: none repeat scroll 0 0 #ba9b69;
+     box-shadow: 0 8px 1px #F7F5F0;
+
     }
     #title-section_4{
-      background: #e7aa32;
-      box-shadow: 0px 8px 1px #fdf6ea;
+      background: none repeat scroll 0 0 #f9aa33;
+      box-shadow: 0 8px 1px #FDF6EA;
+
     }
     #title-section_5{
-      background: #5c95da;
-      box-shadow: 0px 8px 1px #f1f9f8;
+      background: none repeat scroll 0 0 #3498db;
+      box-shadow: 0 8px 1px #F1F9F8;
     }
     #title-section_6{
-      background: #98a3a4;
-      box-shadow: 0px 8px 1px #323333;
-      margin: 40px auto;
+      background: none repeat scroll 0 0 #95a4a5;
+      box-shadow: 0 8px 1px #F1F9F8;
     }
+
     .franja_negra{
       background: #262626;
       padding-bottom: 32px;
@@ -612,6 +651,13 @@ margin-top: 33px;
     /* RESPONSIVE CSS
     -------------------------------------------------- */
     @media screen and (max-width: 1025px) {
+      body{
+        width: 1024px;
+      }
+      #container-carrousel, #container-servicios{
+        width: auto;
+        position: static;
+      }
       .container {
         width: 910px;
       }
@@ -670,46 +716,45 @@ margin-top: 33px;
 
     }
     @media screen and (min-width: 1025px) {
-       #ui-carousel-next, #ui-carousel-prev {
+       #ui-carousel-next, #ui-carousel-prev, #ui-carousel-next2, #ui-carousel-prev2  {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        top: 240px;
         width: 60px;
         height: 240px;
         background: url(../img/arrow-left.png) #fff center center no-repeat;
-        display: block;
-        position: absolute;
-        top: 800px;
         z-index: 100;
+      }
+      #ui-carousel-next2, #ui-carousel-prev2 {
+        top: 100px;
       }
 
       #ui-carousel-next {
-        right: 10%;
+        right: 0;
         background-image: url(../img/arrow-right.png);
       }
 
       #ui-carousel-prev {
-        left: 10%;
+        left: 0;
+
       }
       
       #ui-carousel-next > span, #ui-carousel-prev > span {
         display: none;
       }
       /* /////////////// */
-      #ui-carousel-next2, #ui-carousel-prev2 {
-        width: 60px;
-        height: 240px;
-        background: url(../img/arrow-left.png) #fff center center no-repeat;
-        display: block;
-        position: absolute;
-        top: 1580px;
-        z-index: 100;
-      }
+
+     
+
 
       #ui-carousel-next2 {
-        right: 10%;
+        right: 0;
         background-image: url(../img/arrow-right.png);
       }
 
       #ui-carousel-prev2 {
-        left: 10%;
+        left: 0;
       }
       
       #ui-carousel-next2 > span, #ui-carousel-prev2 > span {
