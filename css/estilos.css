@@ -16,6 +16,92 @@
     body {
       color: #5a5a5a;
     }
+    .carousel #scroll_img{
+      width: 30px;
+position: static;
+height: auto;
+min-width: 30px;
+margin-top: 33px;
+    }
+    h6{
+      font-style: italic;
+      font-weight: normal;
+    }
+    #boton5 {
+      color: red;
+    }
+    #logos_casos a{
+      color: black;
+      text-decoration: none;
+    }
+    #logos_casos a:hover{
+      text-decoration: none;
+    }
+.onoffswitch {
+    position: relative; width: 56px; margin: 10px 10px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+
+.onoffswitch-checkbox {
+    display: none;
+}
+
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #666666; border-radius: 16px;
+}
+
+.onoffswitch-inner {
+    width: 200%; margin-left: -100%;
+    -moz-transition: margin 0.3s ease-in 0s; -webkit-transition: margin 0.3s ease-in 0s;
+    -o-transition: margin 0.3s ease-in 0s; transition: margin 0.3s ease-in 0s;
+}
+
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    float: left; width: 50%; height: 16px; padding: 0; line-height: 16px;
+    font-size: 12px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+    border-radius: 16px;
+    box-shadow: 0px 8px 0px rgba(0,0,0,0.08) inset;
+}
+
+.onoffswitch-inner:before {
+    content: "ES";
+    padding-left: 10px;
+    background-color: #FF0000; color: #FFFFFF;
+    border-radius: 16px 0 0 16px;
+}
+
+.onoffswitch-inner:after {
+    content: "EN";
+    padding-right: 15px;
+    background-color: #5B5D5E; color: #FFFFFF;
+    text-align: right;
+    border-radius: 0 16px 16px 0;
+}
+
+.onoffswitch-switch {
+    width: 16px; margin: 0px;
+    background: #FF0000;
+    border: 2px solid #666666; border-radius: 16px;
+    position: absolute; top: 0; bottom: 0; right: 36px;
+    -moz-transition: all 0.3s ease-in 0s; -webkit-transition: all 0.3s ease-in 0s;
+    -o-transition: all 0.3s ease-in 0s; transition: all 0.3s ease-in 0s; 
+    background-image: -moz-linear-gradient(center top, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 80%); 
+    background-image: -webkit-linear-gradient(center top, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 80%); 
+    background-image: -o-linear-gradient(center top, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 80%); 
+    background-image: linear-gradient(center top, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 80%);
+    box-shadow: 0 1px 1px white inset;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+}
+
     #carrusel-box1{
       width: 950px; 
     }
@@ -43,7 +129,7 @@
     #suscriber  #send_suscriber{
       background: red;
       color: white;
-      width: 84px;
+      width: 104px;
       padding: 10px 0px 0px 27px;
       height: 30px;
     }
@@ -123,22 +209,35 @@
       text-align: center;
       margin: 80px auto 70px auto;
     }
-
+    .featurette-heading span{
+      font-size: 20px;
+      color: #aaa;
+    }
     .title-section h2{
       font-size: 23px;
       margin: 0;
       padding: 0;
       line-height: 35px;
     }
+    #slide03 h4{
+      margin-bottom: 0;
+      font-size: 12px;
+    }
+    #slide03 h6{
+      margin-top: 0px;
+    }
 
     .message{
-      width: 50%;
+      width: 90%;
       left: 0;
       right: 0;
       margin-left: auto;
       margin-right: auto;
       text-align: center; 
       font-size: 30px;   }
+      .message .lead{
+        font-size: 24px;
+      }
     .navbar .nav{
       font-family:  proximasansregular;
       margin-top: 10px;
@@ -171,8 +270,10 @@
       text-shadow: 0 -1px 0 rgba(0,0,0,.5);
     }
     .navbar .nav > li > a {
-      padding: 15px 15px 0px 10px;
+      padding: 0;
       color: white;
+      margin: 14px 7px;
+      cursor: pointer;
     }
     .navbar .nav > li > a:hover{
       border-bottom: 1px solid red;      
@@ -241,6 +342,7 @@
     }
     .carousel-caption .btn {
       margin-top: 10px;
+      font-size: 13px;
       background: #6abc9c;
     }
     .marketing .span2 {
@@ -387,7 +489,7 @@
     #logos_casos h5{
       margin: 0;
       padding: 0;
-      text-align: left;
+      text-align: center;
       line-height: 9px;
     }
     #logos_casos img{
@@ -409,6 +511,7 @@
       margin-right: auto;
       margin-left: auto;
       width: 932px;
+      color: #fff;
     }
     #logos_casos ul li{
       text-align: center;
@@ -419,7 +522,6 @@
       display: inline-block;
       vertical-align: top;
       cursor: pointer;
-
     }
 
     #logos_casos #first-row li{
@@ -474,6 +576,38 @@
       background-repeat: no-repeat;
       background-position: center;
     }
+    .ver_mapa{
+      color: red;
+    }
+    #boton_idioma{
+      width: 53px;
+      height: 25px;
+      border-radius: 25px;
+      background-color: #000;
+      margin-top: 9px;
+      position: relative;
+    }
+    #boton_on{
+      background-color: red;
+      width: 25px;
+      height: 25px;
+      border-radius: 25px;
+      position: absolute;
+      float: left;
+      left: 0px;
+      color: #fff;
+    }
+    #boton_off{
+      background-color: #000;
+      width: 25px;
+      height: 25px;
+      border-radius: 25px;
+      position: absolute;
+      float: left;
+      right: 0px;
+      color: #fff;
+    }
+   
 
     /* RESPONSIVE CSS
     -------------------------------------------------- */
@@ -492,7 +626,7 @@
         display: block;
         background-size: 100% auto;
         position: absolute;
-        top: 1580px;
+        top: 800px;
         z-index: 100;
       }
 
