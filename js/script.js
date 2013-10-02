@@ -9,6 +9,20 @@ $('.onoffswitch-switch').click(function(){
   }*/
 
 });
+$(document).ready(function() {
+        $('#Enviar_form').click(function(){
+           $.ajax({
+              type: "POST",
+              url: "../WEB/envio_mensaje/envio_mensajer.php",
+              data: $('#formulario_contacto').serialize(),
+              success: success,
+            });
+            function success(){
+              alert('Mensaje Enviado.');
+            }
+
+        });
+});
 
 $(window).scroll(function() {
         var pos = $('body').scrollTop();
